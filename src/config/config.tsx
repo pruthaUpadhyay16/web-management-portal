@@ -34,6 +34,17 @@ const API_ENDPOINTS = {
     LIST: `${BASE_URL}/api/v1/contacts/`,
     ADMIN_LIST: `${BASE_URL}/api/v1/admin/contacts`,
   },
+
+  EMERGENCY_PLANNER: {
+    MEDICAL_CONDITIONS: `${BASE_URL}/api/v1/planner/medical-conditions/`,
+    SYMPTOMS: `${BASE_URL}/api/v1/planner/symptoms`,
+    USER_MEDICAL_RECORDS: `${BASE_URL}/api/v1/planner/add-medical-record/`,
+    GET_RECORD:`${BASE_URL}/api/v1/planner/user-medical-records/`,
+    SUBQUESTIONS: `${BASE_URL}/api/v1/planner/sub-questions/`,
+    SUBOPTIONS: `${BASE_URL}/api/v1/planner/sub-question-options/`,
+    SEVERITY:`${BASE_URL}/api/v1/planner/severities/`,
+    DELETE_RECORD:`${BASE_URL}/api/v1/planner/user-medical-record/`,
+  },
   ADMIN_USERS: {
     LIST: `${BASE_URL}/api/v1/admin/users`,
   },

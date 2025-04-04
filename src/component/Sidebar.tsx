@@ -64,7 +64,7 @@ const Sidebar: React.FC<SidebarProps> = ({ setActiveSection , activeSection }) =
           Emergency Contacts
         </button>
 
-        {/* <button
+        <button
           className={`w-full flex items-center p-3 rounded-lg ${
             activeSection === "emergency-planner"
               ? "bg-blue-100 text-blue-700"
@@ -87,7 +87,7 @@ const Sidebar: React.FC<SidebarProps> = ({ setActiveSection , activeSection }) =
             ></path>
           </svg>
           Emergency Planner
-        </button> */}
+        </button>
 
         <button
           className={`w-full flex items-center p-3 rounded-lg ${

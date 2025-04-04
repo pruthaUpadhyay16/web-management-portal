@@ -1,5 +1,5 @@
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -21,7 +21,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const auth = useContext(AuthContext);
   console.log(auth);
-  return auth?.user ? children : <Navigate to="/#/login" />;
+  return auth?.user ? children : <Navigate to="/login" />;
 };
 
 const App = () => {
@@ -30,8 +30,8 @@ const App = () => {
       <ToastContainer position="top-right" autoClose={3000} />
       <Router>
         <Routes>
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/#/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route
